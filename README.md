@@ -11,6 +11,8 @@ under the Special Marriage Act, GST on exported services, a ₹72,000 EMI agains
 You describe a situation. Sorted matches it to people who lived through that exact
 thing, and you ask them follow-ups until the answer applies to your case.
 
+**Live: [sorted-rose.vercel.app](https://sorted-rose.vercel.app)**
+
 ```bash
 npm install
 npm run dev     # http://localhost:3000
@@ -99,6 +101,10 @@ is what makes the thing feel like a person rather than a search result.
 cp .env.example .env.local   # add ANTHROPIC_API_KEY
 ```
 
+The deployed site runs in offline mode — no key is set on Vercel, so it serves
+stored perspectives. To switch it to live answers, add `ANTHROPIC_API_KEY` under
+Project → Settings → Environment Variables and redeploy.
+
 `SORTED_EFFORT` (default `low`) trades answer depth for latency. Thinking is always
 on for Opus 5.5, so effort is the only latency lever.
 
@@ -159,6 +165,16 @@ Roughly in order of how much they matter:
 6. **Safety rails.** Health, legal and immigration answers need stricter templates
    and an escalate-to-professional path. The persona prompt gestures at this; it is
    not enough on its own.
+
+## Deployment
+
+Deployed on Vercel, linked to this repo — every push to
+`claude/gallant-tesla-dsijna` (the repo's default branch) triggers a production
+build.
+
+Note that Vercel refuses builds on Next.js versions affected by the React2Shell
+advisories, so the `next` version here is pinned to the patched `backport` line
+(15.5.28). Dropping below a patched release will fail the build, not just warn.
 
 ## Stack
 
