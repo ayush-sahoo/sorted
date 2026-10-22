@@ -1,0 +1,146 @@
+import type { Question } from './types';
+
+export const questions: Question[] = [
+  {
+    slug: 'big-company-vs-startup-esops',
+    title: '₹18 LPA at a big company, or ₹9 LPA + ESOPs at a seed startup?',
+    context: 'I am 26, two years of experience, no dependants yet but a home loan starts next year.',
+    category: 'careers',
+    tags: ['esop', 'offer', 'startup', 'ctc', 'salary negotiation', 'equity'],
+    answers: [
+      { mind: 'shruti-kale', take: 'Price the ESOPs at zero and ask if you would still take it. If no, do not take it. Then get the strike price, the last valuation and the buyback history in writing — no buyback history means it is a lottery ticket with a ₹9 lakh annual fee.' },
+      { mind: 'arjun-mehta', take: 'I have had one grant pay ₹41 lakh and one pay nothing. The difference was the post-exit exercise window and whether the company had ever actually bought shares back. Ask both questions before you discuss the salary.' },
+      { mind: 'karthik-subramanian', take: 'From the other side of the table: at seed stage I could not honestly promise any employee liquidity, and the honest founders will say so. If they are confident about your ESOP value, that is a flag, not a feature.' },
+      { mind: 'imran-ali', take: 'You said a home loan starts next year. That changes the question. Take the number that lets you pay the EMI with no salary for six months, and revisit equity when your fixed costs are covered.' },
+    ],
+  },
+  {
+    slug: 'one-more-upsc-attempt',
+    title: 'My parents want me to give UPSC one more attempt. I am 26 and this would be my fourth.',
+    context: 'Cleared Prelims twice, never Mains. Living at home, no income.',
+    category: 'upsc-govt',
+    tags: ['upsc', 'attempt', 'parents', 'quit upsc', 'drop year'],
+    answers: [
+      { mind: 'meera-raghavan', take: 'Did your Mains score move between attempts? If it did not move, another year will not move it either — the method is the problem, not the time. I took my fourth only because my score had jumped 108 marks.' },
+      { mind: 'abhinav-tiwari', take: 'I stopped at 28 after three. The gap was not the problem I thought it was — my first offer after was ₹4.2 LPA, and ₹26 LPA four years later. Announce a decision with the next thing already attached, do not ask permission.' },
+      { mind: 'vikram-rathore', take: 'If what you want is a stable job with predictable hours rather than the service itself, there are PSU and state exams with a fraction of the competition. People conflate the two and lose years to it.' },
+    ],
+  },
+  {
+    slug: 'ms-us-worth-it',
+    title: 'Is an MS in the US still worth a ₹55 lakh loan in 2026?',
+    context: 'CS background, 2 years of work experience, loan would be against my parents\' house.',
+    category: 'abroad',
+    tags: ['ms in us', 'education loan', 'study abroad', 'h1b', 'roi'],
+    answers: [
+      { mind: 'faizan-qureshi', take: 'I did it on ₹48 lakh and it worked, which makes me the wrong person to ask for permission. Run the EMI — about ₹60,000 a month for ten years — against a realistic post-OPT salary, and remember the H-1B is a lottery. I won it. My loan would not have cared if I had not.' },
+      { mind: 'rohit-bansal', take: 'Add a line to your spreadsheet for the decade in the green card queue. It cost me two promotions and a startup I could not join. Build options that do not depend on a date you cannot control.' },
+      { mind: 'sneha-agarwal', take: 'Collateral against your parents\' house changes the risk entirely — that is not your downside, it is theirs. If you go, get term insurance covering the full loan before you fly. It costs very little and it is the difference between a bad year and a family losing a house.' },
+    ],
+  },
+  {
+    slug: 'rent-powai-vs-buy-thane',
+    title: 'Rent in Powai at ₹46,000 or buy in Thane with a ₹72,000 EMI?',
+    context: 'Married, both working, planning a child in two years.',
+    category: 'money',
+    tags: ['rent vs buy', 'home loan', 'emi', 'property', 'mumbai'],
+    answers: [
+      { mind: 'deepa-iyer', take: 'I made exactly this choice and bought. The only question that decides it is how many years you stay — under about seven, renting wins after 5-7% stamp duty and registration. And price the commute: mine cost 95 minutes a day, about 350 hours a year.' },
+      { mind: 'sneha-agarwal', take: 'Before either: six months of expenses liquid, term cover at 15-20x income, and your own health policy. An EMI with no emergency fund is how a manageable bad month becomes a sold flat.' },
+      { mind: 'imran-ali', take: 'I had an EMI and three weeks of runway when I was laid off. Whatever you choose, the number that matters is how many months you can pay it with no salary. Mine was three. It should have been twelve.' },
+    ],
+  },
+  {
+    slug: 'hr-asking-last-ctc',
+    title: 'HR is insisting on my last CTC before they share a band. What do I say?',
+    context: 'Interviewing one level up from my current role.',
+    category: 'careers',
+    tags: ['ctc', 'salary negotiation', 'hr round', 'last drawn salary', 'offer'],
+    answers: [
+      { mind: 'shruti-kale', take: 'Say: "I would rather not anchor on my current fixed, because this role is a level up. Tell me the band you have budgeted and I will tell you straight away if we are in the same place." Nine times in ten they state a band — and it is wider than what they would have offered against your old number.' },
+      { mind: 'imran-ali', take: 'If they will not budge, give your total — fixed plus variable plus any ESOP value plus bonus — not your take-home. And never give a number you have not decided you would accept.' },
+    ],
+  },
+  {
+    slug: 'cofounder-wants-to-shut-down',
+    title: 'My co-founder wants to shut down and I do not.',
+    context: '31 months in, ₹3 crore raised, about five months of runway left.',
+    category: 'startups',
+    tags: ['shutting down', 'cofounder conflict', 'runway', 'startup failure'],
+    answers: [
+      { mind: 'priya-deshmukh', take: 'This is almost never about the business — it is two different personal runways. Put both on paper tonight: his months of savings versus yours. Mine was 19 months, his was four with a home loan. He was not giving up, he was out of road.' },
+      { mind: 'karthik-subramanian', take: 'Five months of runway is a fundraise you have already lost unless you start this week — my seed took five months and 71 meetings. Decide now whether you are raising or winding down, because doing both badly is the one outcome with no survivors.' },
+      { mind: 'lakshmi-menon', take: 'Whatever you decide, protect the filings and the payroll. The founders I have watched get genuinely hurt were hurt by unpaid TDS and PF, not by the failure itself.' },
+    ],
+  },
+  {
+    slug: 'laid-off-this-week',
+    title: 'I was laid off on Monday. I have an EMI and my mother on my health policy.',
+    context: '34, sole earner, no severance offered yet.',
+    category: 'layoffs',
+    tags: ['layoff', 'severance', 'emi', 'health insurance', 'job loss', 'emergency fund'],
+    answers: [
+      { mind: 'imran-ali', take: 'Paperwork in the first 48 hours while HR still replies: relieving letter, experience letter, full and final in writing, PF and gratuity position. Then buy a personal health policy today — your group cover almost certainly ends on your last day and your mother is uninsured right now.' },
+      { mind: 'sneha-agarwal', take: 'Call your lender before you miss an EMI, not after — a moratorium discussed in advance is a different conversation from a default. And do not liquidate equity in a down month if you have any FD or liquid fund left.' },
+      { mind: 'rohit-bansal', take: 'If any part of your status or visa is tied to the employer, that clock starts from the termination date in writing, not your last working day. Get that date on paper today.' },
+    ],
+  },
+  {
+    slug: 'parents-looking-for-a-match',
+    title: 'My parents have started looking for a match and I am not ready.',
+    context: '27, work in another city, they do not know I am seeing someone.',
+    category: 'family',
+    tags: ['arranged marriage', 'marriage pressure', 'rishta', 'parents', 'saying no'],
+    answers: [
+      { mind: 'ayesha-sheikh', take: 'Separate the two fights. "Not now" is a timeline and is negotiable — ask for a specific defensible window. "Not this way, ever" is an identity and does not get won at 11pm after a rishta visit. Spend a year only fighting the first one.' },
+      { mind: 'harpreet-kaur', take: 'Before any conversation: your own documents in your possession, your own money in an account only you can see, and a place to stay for three months. The emotional conversation goes much better when you are not dependent.' },
+      { mind: 'abhinav-tiwari', take: 'Announce, do not ask. A question invites a six-month negotiation; a decision with a date attached ends it. My father did not speak to me properly for seven months and now he is fine.' },
+    ],
+  },
+  {
+    slug: 'freelance-gst-structure',
+    title: 'I bill about $4,000 a month to US clients. Do I need GST, and should I make a company?',
+    context: 'Solo designer in Ahmedabad, second year of freelancing.',
+    category: 'freelancing',
+    tags: ['gst', 'usd', 'export of services', 'lut', 'proprietorship', 'pvt ltd', 'freelancing'],
+    answers: [
+      { mind: 'tanvi-shah', take: 'At that volume you are over the threshold, so yes — register, and file a Letter of Undertaking so you can export without paying 18% IGST and chasing a refund. Exports are zero-rated, not exempt. That distinction cost me ₹2.3 lakh in year two.' },
+      { mind: 'lakshmi-menon', take: 'Stay a proprietorship. A Pvt Ltd costs ₹25,000-40,000 a year in filings and audit, and buys you limited liability and the ability to raise money. If you need neither, you are paying for a costume.' },
+      { mind: 'sneha-agarwal', take: 'Under presumptive taxation you declare 50% of gross receipts as income — for a designer with low costs that is a genuinely good deal. Just pay advance tax in four instalments; the interest for not doing so is the most boring money you will ever lose.' },
+    ],
+  },
+  {
+    slug: 'moving-out-cannot-afford',
+    title: 'I want to move out of my parents\' house but I cannot afford it.',
+    context: '24, ₹42,000 take-home, first job, parents in the same city and against it.',
+    category: 'moving',
+    tags: ['moving out', 'living alone', 'pg', 'rent', 'deposit', 'budget', 'parents'],
+    answers: [
+      { mind: 'zoya-khan', take: 'Write the real number first. Mine was ₹25,000 a month on a ₹42,000 take-home — but the killer was ₹46,000 of deposit and brokerage before I slept there one night. Save three months\' deposit plus two months\' expenses first. Start with a PG; it is pricier monthly and far cheaper to begin.' },
+      { mind: 'satyam-kumar', take: 'Decide the number going home as a fixed percentage on a fixed date, once. Otherwise every request is an emergency and saying no to one makes you the villain. Mine is 20% on the 2nd, no negotiation.' },
+      { mind: 'ayesha-sheikh', take: 'Money first, announcement second. I had ₹60,000 saved and a PG booked before I said a word — reversing that order hands them the only real veto they have.' },
+    ],
+  },
+  {
+    slug: 'back-to-work-after-break',
+    title: 'Three years out after my daughter was born. Can I still get back in?',
+    context: '36, was a marketing manager, applied to 40 roles with no response.',
+    category: 'careers',
+    tags: ['career break', 'return to work', 'resume gap', 'childcare', 'working mother'],
+    answers: [
+      { mind: 'ritika-nair', take: 'The CV is not your blocker. Solve childcare in writing first — interviewers can smell an unresolved 4pm pickup. Then close the recency gap with a three-month contract or a real project, then use returnship programmes; they exist specifically to skip the gap question. I came back at 40% of my old salary and passed it inside two years.' },
+      { mind: 'shruti-kale', take: 'From the hiring side: 40 applications with no response usually means the CV opens with the gap instead of the output. Lead with your last real results, put the break in one flat line, and apply through a human wherever you can — cold portal applications are where returning candidates go to die.' },
+    ],
+  },
+  {
+    slug: 'parents-ageing-another-city',
+    title: 'My parents are getting older in a tier-2 city and I live 600 km away.',
+    context: 'Only child, my mother had a fall last month.',
+    category: 'family',
+    tags: ['elder care', 'ageing parents', 'caregiving', 'moving parents', 'guilt'],
+    answers: [
+      { mind: 'suresh-patil', take: 'Build a local system, not remote presence. One named doctor who takes your call, one person within 15 minutes with keys, a paid attendant at ₹8,000-15,000 a month, all reports in a shared folder, and a Sunday call about their week rather than their medicines.' },
+      { mind: 'nandini-pillai', take: 'Ask yourself honestly whether you are moving for your parents or to stop feeling guilty about them — those need different solutions. I moved back and it was right. But if it is vague homesickness, try three months of remote work from there first.' },
+    ],
+  },
+];
